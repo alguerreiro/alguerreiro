@@ -1,3 +1,14 @@
+#Como Implementar:
+#Substitua seu_api_token_aqui e seu_account_id_aqui pelas suas credenciais.
+#Verifique se a lista blacklist já existe no painel da Cloudflare:
+#Security → WAF → Lists
+#Salve como /var/ossec/integrations/cloudflare_blocker.py
+#Torne executável:
+#chmod +x /var/ossec/integrations/cloudflare_blocker.py
+#Teste manualmente: ./cloudflare_blocker.py "8.8.8.8"
+
+################# SCRIPT ABAIXO #################
+
 #!/usr/bin/env python3
 import sys
 import json
